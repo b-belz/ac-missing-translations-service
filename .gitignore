@@ -1,0 +1,70 @@
+########################
+# dist / cache / local-config
+########################
+dist
+dist-dev
+webpack.deployment.json
+stats.json
+
+
+########################
+# node.js / npm
+########################
+lib-cov
+*.seed
+*.dat
+*.pid
+pids
+logs
+results
+node_modules**
+*.gz
+*.out
+*.log
+*.csv
+
+
+########################
+# misc / editors
+########################
+*~
+*#
+**/.DS_STORE/**
+**/.netbeans/**
+**/nbproject/**
+**/.idea/**
+**/tracegl.js/**
+**/sftp-config.json/**
+.DS_Store
+.sass-cache
+.yo-rc.json
+.awspublish*
+.cf-aws-*
+.vscode
+
+########################
+# docs / tests
+########################
+doc
+coverage.html
+test/temp
+test/reports
+npm-debug.log
+report.xml
+
+# Issue reporter
+issue_reporter.credentials
+/issue_reporter_logs/*
+
+########################
+# local config
+.jenkins.conf
+#package-lock.json
+
+
+########################
+# vim temp files
+########################
+.nvmrc
+.browserify-cache
+~$AC-refactoring.xlsx
