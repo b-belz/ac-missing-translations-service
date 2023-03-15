@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "name": "AC-USERTASKS-SERVICE",
+            "script": "./server.js",
+            "autorestart": false,
+            "kill_timeout": 10000,
+            "max_restarts": 5,
+            "restart_delay": 5000,
+            "merge_logs": true,
+            "error_file": "~/.pm2/logs/UserTasksService.log",
+            "out_file": "~/.pm2/logs/UserTasksService.log"
+        }
+    ]
+}

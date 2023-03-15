@@ -1,0 +1,5 @@
+**/*.json
+**/*.md
+config/ssl
+config/env
+*.pem

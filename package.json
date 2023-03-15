@@ -1,11 +1,41 @@
 {
-	"name": "ac-missing-translations-service",
-	"version": "1.0.0",
-	"main": "index.js",
-	"author": "Benedict Belz <benedict.belz@mmpro.de>",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.18.2",
-		"mysql2": "^3.1.2"
-	}
+  "name": "ac-usertasks-service",
+  "description": "TBA",
+  "version": "0.1.0",
+  "main": "server.js",
+  "private": true,
+  "license": "ISC",
+  "author": "Malik Dimter (https://www.admiralcloud.com)",
+  "contributors": [
+    "Mark Poepping (https://www.admiralcloud.com)",
+    "Virginijus Digrys (https://www.admiralcloud.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admiralcloud/ac-usertasks-service.git"
+  },
+  "dependencies": {
+    "ac-api-framework": "git+ssh://git@ac-api-framework.github.com:admiralcloud/ac-api-framework#v3.0.0",
+    "ac-api-policies": "git+ssh://git@ac-api-policies.github.com:admiralcloud/ac-api-policies#develop",
+    "ac-bootstrap-bull": "^2.0.1",
+    "ac-bootstrap-redis": "^0.0.7",
+    "ac-ratelimiter": "^2.0.0-beta.1",
+    "ac-redislock": "^3.0.0",
+    "async": "^3.2.4",
+    "axios": "^1.3.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "ac-semantic-release": "^0.3.5",
+    "chai": "^4.3.7",
+    "eslint": "^8.35.0",
+    "minimist": "^1.2.8",
+    "mocha": "^10.2.0",
+    "mocha-jenkins-reporter": "^0.4.8",
+    "supertest": "^6.3.3"
+  },
+  "scripts": {
+    "dev": "profile=ac-stat-instance-role.temp nodemon"
+  }
 }
