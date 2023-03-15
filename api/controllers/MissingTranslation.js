@@ -70,7 +70,7 @@ const MissingTranslationController = {
 		} 
 		// CATCH ERROR FROM DATABASE
 		catch(error) {
-			res.status(400).send({ message: 'Unable to create database entry' });
+			res.status(400).send({ message: 'Unable to write to database' });
 		}
 	},
 
@@ -116,7 +116,7 @@ const MissingTranslationController = {
 		}
 		// CATCH ERROR FROM DATABASE
 		catch(error) {
-			res.status(400).send({ message: 'Unable to get database' });
+			res.status(400).send({ message: 'Unable to get data from database ' });
 		}
 	},
 
